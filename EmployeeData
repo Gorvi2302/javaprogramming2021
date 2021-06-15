@@ -1,0 +1,23 @@
+public class EmployeeData {
+   String name;
+   int year;
+   String address;
+   
+   EmployeeData(String name, int year, String address){
+       this.name= name;
+       this.year=year;
+       this.address=address;      
+   }
+}
+
+class Emp{
+    public static void main(String[] args){
+        EmployeeData e1= new EmployeeData("Robert",1994,"64C-WallsStreet");
+        EmployeeData e2= new EmployeeData("Sam",2000,"68D-WallsStreet");
+        EmployeeData e3= new EmployeeData("John",1992,"26B-WallsStreet");
+        System.out.println("Name\t Year of joining\t Address");
+        System.out.println(e1.name+"\t\t"+e1.year+"\t\t"+e1.address);
+        System.out.println(e2.name+"\t\t"+e2.year+"\t\t"+e2.address);
+        System.out.println(e3.name+"\t\t"+e3.year+"\t\t"+e3.address);
+    }
+}
